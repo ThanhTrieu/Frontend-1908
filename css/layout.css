@@ -1,0 +1,105 @@
+/* comment css */
+/* reset trinh duyet */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* css chung */
+body{
+	font-family: 'tahoma';
+	font-size: 14px;
+}
+
+/* css header */
+header{
+	width: 100%;
+	background-color: pink;
+	min-height: 80px;
+}
+header div.logo{
+	width: 30%;
+	height: 80px;
+	background-color: blue;
+	float: left;
+}
+header div.banner{
+	width: 70%;
+	height: 80px;
+	background-color: green;
+	float: left;
+}
+
+/* css nav */
+nav{
+	width: 100%;
+	background-color: pink;
+	height: 40px;
+}
+div.container {
+	width: 980px;
+	margin: auto;
+}
+nav ul {
+	text-align: center;
+}
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 20px;
+}
+nav ul li a {
+	text-decoration: none;
+}
+
+/* CSS content-main */
+main{
+	width: 100%;
+	min-height: 600px;
+}
+
+main div.content-left{
+	width: 80%;
+	height: 600px;
+	background-color: violet;
+	float: left;
+}
+main aside.content-right{
+	width: 20%;
+	height: 600px;
+	background-color: yellow;
+	float: left;
+}
+main div.content-left article{
+	width: 100%;
+	height: 50%;
+	background-color: red;
+}
+main div.content-left section{
+	width: 100%;
+	height: 50%;
+	background-color: blue;
+}
+
+/* CSS Footer */
+footer {
+	width: 100%;
+	background-color: black;
+	height: 200px;
+}
+footer h3 {
+	color: white;
+	text-align: center;
+	padding: 80px 0px;
+}
+
+
+
+
+
+
+
+
+
+
