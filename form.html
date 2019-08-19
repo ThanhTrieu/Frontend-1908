@@ -4,18 +4,76 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Demo HTML Form</title>
+	<style type="text/css">
+		
+	</style>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 	<!-- HTML Form -->
-	<form action="server/test.jsp" method="POST" enctype="multipart/form-data">
+	<form action="server/test.jsp" method="POST" enctype="multipart/form-data" style="">
 		<label for="user-1"> Username</label>
-		<input type="text" id="user-1" class="user" name="user">
+		<input type="text" id="user-1" class="user" name="user" required="required" minlength="3" maxlength="10">
+
 		<br><br>
 		<label for="pass"> Password</label>
-		<input type="password" name="pass" id="pass">
+		<input type="password" name="pass" id="pass" readonly="readonly" value="123456789">
 		<br><br>
 		<label for="number"> Number</label>
-		<input type="number" name="number" id="number">
+		<input type="number" name="number" id="number" disabled="disabled">
+		<br><br>
+		<label for="email"> Email</label>
+		<!-- chi chap nhan nhap 1 dia chi email -->
+		<input type="email" name="email" id="email" disabled="disabled" value="test@gmail.com">
+		<br><br>
+		<label for="url"> URL</label>
+		<!-- chi chap nhan nhap 1 dia chi url -->
+		<input type="url" name="url" id="url">
+		<br><br>
+		<label for="file"> File</label>
+		<input type="file" name="file" id="file" multiple="multiple">
+		<br><br>
+		<label for="color"> Color</label>
+		<input type="color" name="color" id="color">
+		<br><br>
+		<label for="date"> Date</label>
+		<!-- date/week/month -->
+		<input type="date" name="date" id="date">
+
+		<br><br>
+		<label for="content"> Content</label>
+		<!-- cho phep nhap du lieu tren nhieu dong -->
+		<textarea rows="5" cols="50" id="content" name="content"></textarea>
+		<br><br>
+
+		<label for="gender">Gender</label>
+		<select name="gender" id="gender">
+			<option value="">Khong xac dinh</option>
+			<option value="1">Nam</option>
+			<option value="0">Nu</option>
+		</select>
+
+		<br><br>
+		<label for="agree">Agree</label>
+		<input type="radio" name="agree" id="agree" checked="checked">
+		<br>
+		<label for="agreev2">Do not Agree</label>
+		<input type="radio" name="agree" id="agreev2">
+		<br>
+
+		<label for="age">Tuoi tu 18-20</label>
+		<input type="checkbox" name="age" id="age" checked="checked">
+		<br>
+		<label for="agev2">Tuoi tu 25-30</label>
+		<input type="checkbox" name="agev2" id="agev2">
+		<br><br>
+
+		<button type="submit" name="btnSubmit"> Submit </button>
+		<br>
+		<button type="button" name="btnTest"> Test </button>
 	</form>
 </body>
 </html>
+
+
+
