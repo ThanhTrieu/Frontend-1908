@@ -1,0 +1,99 @@
+div.box :first-child{
+	color: blue;
+}
+div.box :first-of-type{
+	color: red;
+}
+
+div.box :last-child{
+	color: yellow;
+}
+
+div.box :last-of-type{
+	color: green;
+}
+
+div.box :nth-last-child(1) {
+	color: violet;
+}
+
+div.box :nth-last-of-type(1){
+	color: orange;
+}
+
+div.box :nth-child(3) {
+	font-size: 50px;
+}
+
+div.box :nth-of-type(3){
+	color: silver;
+}
+
+div.box-2 :only-child{
+	color: green;
+}
+div.box-3 > input[type="text"]:focus{
+	width: 500px;
+	height: 30px;
+	border: 1px solid red;
+}
+div.box-3 > input[type="checkbox"]:checked{
+	width: 100px;
+	height: 100px;
+}
+div.box-4 a:active{
+	color: red;
+}
+div.box-4 a:visited{
+	color: yellow;
+}
+div.box-4 a:link{
+	color: green;
+}
+div.box-4 a:hover{
+	color: violet;
+}
+div.box-5 p::first-letter{
+	font-size: 30px;
+	color: red;
+}
+div.box-5 p::first-line{
+	color: blue;
+}
+div.box-5 p::before{
+	/* content: "java - "; */
+	content: url('../images/icon.png');
+}
+div.box-5 p::selection{
+	color: yellow;
+}
+div.box-6 p{
+	text-shadow: black 4px 8px 3px;
+} 
+div.box-6{
+	width: 500px;
+	height: 500px;
+	/* background-color: pink;
+	background-image: url('../images/icon.png');
+	background-repeat: no-repeat; */
+	/* background-repeat: repeat-x; */
+	/* background-repeat: repeat-y; */
+	/* background-repeat:  repeat; */
+	/* background-position: center center;
+	background-attachment: scroll;
+	background-size: 100% 100%; */
+	background: pink url('../images/icon.png') no-repeat center center fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

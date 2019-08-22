@@ -52,7 +52,9 @@ div.box-1 + div.box-2 {
 	height: 300px;
 	border: 1px solid red;
 }
-
+div.content > div.content-2 + div.content-3 ~ div.content-4 > div.content-5 nav.menu > input[class^='myinput'] {
+	border: 2px solid blue;
+}
 
 
 
