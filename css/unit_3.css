@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div.content{
+	/* tac dong 4 huong cua phan tu */
+	border: 1px dotted red;
+	width: 300px;
+	height: 300px;
+}
+div.content-2{
+	border: 1px dotted blue;
+	width: 300px;
+	height: 300px;
+	/* margin-top: 20px; */
+	/* padding-top: 20px; */
+}
+div.content-2 p {
+	/* padding-top: 20px; */
+	/* margin-top: 20px; */
+	background-color: yellow;
+}
+div.content-2 div.box{
+	width: 50px;
+	height: 50px;
+	border: 1px solid green;
+	/* margin: auto; */
+	/* padding-top: 20px; */
+}
+
+div.content-3{
+	width: 300px;
+	height: 300px;
+	border: 1px solid yellow;
+}
+div.content, div.content-2, div.content-3 {
+	display: inline-block;
+}
+div.content-4{
+	margin-left: 50px;
+	width: 300px;
+	height: 300px;
+	border: 1px solid red;
+	/* display: none; */
+	/* visibility: hidden; */
+}
+div.content-4 a {
+	/* display: block; */
+	display: list-item;
+}
+div.content-5{
+	width: 300px;
+	height: 300px;
+	border: 1px solid yellow;
+}
+
+div.parent {
+	width: 980px;
+	margin: 10px auto;
+}
+div.parent div.child-1{
+	width: 250px;
+	height: 300px;
+	background: yellow;
+	float: left;
+}
+div.parent div.child-2{
+	width: 250px;
+	height: 300px;
+	background: red;
+	float: left;
+}
+div.parent div.child-3{
+	width: 480px;
+	height: 300px;
+	background: blue;
+	float: left;
+}
+div.parent div.child-4{
+	width: 250px;
+	height: 300px;
+	background: violet;
+/* 	clear: both; */
+}
+.clear{
+	clear: both;
+}
+div.container{
+	width: 350px;
+	height: 200px;
+	border: 1px solid red;
+	position: relative;
+	z-index: 1;
+	background-color: pink;
+}
+img{
+	/* position: relative;
+	top: -200px;
+	bottom: 100px; */
+	position: absolute;
+	top: 1600px;
+	z-index: 0;
+}
+nav.menu {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	position: fixed;
+	top: 0px;
+}
+
+
+
+
+
+
+
+
+
+

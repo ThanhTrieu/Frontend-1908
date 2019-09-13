@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+nav{
+	width: 200px;
+	margin: 10px auto;
+	background-color: #FFFFCC;
+}
+nav ul.menu li {
+	list-style: none;
+	padding: 10px 5px;
+	border-top: 1px solid red;
+}
+nav ul.menu li:first-child{
+	border: none;
+}
+nav ul.menu li a{
+	text-decoration: none;
+/* 	padding-left: 5px; */
+}
+nav ul.menu li:hover{
+	background-color: black;
+	cursor: pointer;
+}
+nav ul.menu li:hover a {
+	color: white;
+}
+/* CSS dropdown menu */
+
+nav ul.menu li ul.dropdown{
+	display: none;
+}
+/* hien thi menu dropdown */
+nav ul.menu li:hover ul.dropdown{
+	display: block;
+}
+
+
+
+
+
