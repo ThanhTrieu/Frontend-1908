@@ -16,6 +16,7 @@ nav ul.menu li {
 	list-style: none;
 	padding: 10px 5px;
 	border-top: 1px solid red;
+	position: relative;
 }
 nav ul.menu li:first-child{
 	border: none;
@@ -28,7 +29,7 @@ nav ul.menu li:hover{
 	background-color: black;
 	cursor: pointer;
 }
-nav ul.menu li:hover a {
+nav ul.menu li:hover > a {
 	color: white;
 }
 /* CSS dropdown menu */
@@ -37,9 +38,17 @@ nav ul.menu li ul.dropdown{
 	display: none;
 }
 /* hien thi menu dropdown */
-nav ul.menu li:hover ul.dropdown{
+nav ul.menu li:hover > ul.dropdown{
 	display: block;
+	min-width: 200px;
+	background-color: #FFFFCC;
+	position: absolute;
+	left: 200px;
+	top: 0px;
 }
+
+
+
 
 
 
