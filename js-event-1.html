@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JS Event</title>
+</head>
+<body onerror="errorPage();" onload="loadPage();" onresize="myResize();">
+	<h1>Learning JS Event</h1>
+	<button onclick="helloword('java1908e');demo();"> click me</button>
+	<br><br>
+	<input type="text" onblur="myBlur();" onfocus="myFocus();" >
+	<br><br>
+	<select onchange="selectGender(this);">
+		<option value="">chon gioi tinh</option>
+		<option value="1">Nam</option>
+		<option value="0">Nu</option>
+	</select>
+	<br><br>
+	<input type="text" onchange="getDataText(this);">
+	<br><br>
+	<button ondblclick="myDbClick();">dbClick</button>
+	<br><br>
+	<input type="text" onkeydown="myKeydown();" onkeypress="myKeypress();" onkeyup="myKeyup();">
+	<br><br>
+	
+	<div style="width: 300px; height: 300px; background-color: yellow" onmousedown="myMouseDown()" onmouseup="myMouseUp();" onmousemove="myMouseMove();"></div>
+	<br><br>
+	<img src="images/icon.png" onmouseover="myMouseOver(this);" onmouseout="myMouseOut(this);">
+	<br><br>
+	<form action="" method="post" onreset="resetForm();">
+		<input type="text" name="user">
+		<br>
+		<button type="button" onclick="myResetForm()">Reset</button>
+		<br>
+		<button type="button">Submit</button>
+	</form>
+	<br><br>
+	<textarea rows="5" cols="30" onselect="mySelectText();"></textarea>
+
+	<script type="text/javascript" src="js/event-1.js"></script>
+</body>
+</html>
