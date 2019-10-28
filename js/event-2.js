@@ -52,6 +52,32 @@ myImg[0].addEventListener('mouseover', function(){
 	this.height = 500;
 });
 
+let btnBom = document.getElementById('bom');
+btnBom.addEventListener('click', function(){
+	// lay ra kich thuoc khung trinh duyet dang lam viec
+	let wBrowser = window.innerWidth;
+	let hBrowser = window.innerHeight;
+
+	console.log(wBrowser, hBrowser);
+
+	// mo ra 1 tab moi
+	// window.open('https://vnexpress.net', 'VNExpress','width=100px,height=100px');
+	
+	// reload page
+	// window.location.reload(true);
+	// tham so true: load lai web tu server (tranh tinh trang load lai web tu cache cua browser)
+	
+	// dieu huong di sang 1 link web khac
+	// window.location.href= "https://vnexpress.net";
+	
+	// lay ra kich thuoc cua man hinh may tinh nguoi dung dang truy cap vao web
+	let wScreen = screen.width;
+	let hScreen = screen.height;
+
+	console.log(wScreen, hScreen);
+	window.location.href = 'js-event-1.html';
+});
+
 
 
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>demo JS</title>
+</head>
+<body>
+	<h1>Tinh tong 2 so</h1>
+	<label for="number-1">So A</label>
+	<input type="text" id="number-1" class="number-1">
+	<p id="errNumber-1"></p>
+	<br><br>
+	<label for="number-2">So B</label>
+	<input type="text" id="number-2" class="number-2">
+	<p id="errNumber-2"></p>
+	<br><br>
+	<button type="button" id="sumNumber">Tong</button>
+	<p id="result"></p>
+
+	<h2> User Login</h2>
+	<p id="errLo
+	gin"></p>
+	<label for="username">Username: </label>
+	<input type="text" id="username" class="username">
+	<br><br>
+	<label for="password">Password: </label>
+	<input type="text" id="password" class="password">
+	<br><br>
+	<button id="btnLogin" type="button
+	">Login</button>
+
+	<h2> Count time</h2>
+	<h3 id="time"> 0 </h3>
+	<button id="start" type="button">Start</button>
+	<button id="stop" type="button">Stop</button>
+	<button id="reset" type="button">Reset</button>
+	<input type="hidden" id="txtTime" value="0">
+
+	<script type="text/javascript">
+		let btnSumNumber = document.getElementById('sumNumber');
+		btnSumNumber.addEventListener('click', function(){
+			let number1 = document.getElementById('number-1');
+			let a = number1.value;
+
+			let number2 = document.getElementById('number-2');
+			let b = number2.value;
+
+			let errNumber1 = document.getElementById('errNumber-1');
+			let errNumber2 = document.getElementById('errNumber-2');
+
+			let chkNumber1 = null;
+			let chkNumber2 = null;
+
+			// kiem tra xem nguoi nhap so ko?
+			if(!isNaN(a)){
+				a = Number.parseInt(a);
+				chkNumber1 = true;
+				number1.style.border = '';
+				errNumber1.innerHTML = '';
+				errNumber1.style.color = '';
+
+			} else {
+				chkNumber1 = false;
+				// tao hieu ung css vien mau do cho input a
+				// thong bao loi o the p id errNumber-1
+				number1.style.border = '2px solid red';
+				errNumber1.innerHTML = 'Vui long nhap so';
+				errNumber1.style.color = 'red';
+			}
+
+			if(!isNaN(b)){
+				b = Number.parseInt(b);
+				chkNumber2 = true;
+				number2.style.border = '';
+				errNumber2.innerHTML = '';
+				errNumber2.style.color = '';
+
+			} else {
+				chkNumber2 = false;
+				// tao hieu ung css vien mau do cho input a
+				// thong bao loi o the p id errNumber-1
+				number2.style.border = '2px solid red';
+				errNumber2.innerHTML = 'Vui long nhap so';
+				errNumber2.style.color = 'red';
+			}
+
+			if(chkNumber2 && chkNumber1){
+				let total = a + b;
+				document.getElementById('result').innerHTML = total; 
+			} else {
+				document.getElementById('result').innerHTML = ''
+
+				; 
+			}
+		});
+
+		// bat su kien cho button start
+		let btnStart = document.getElementById('start');
+		let txtTime = document.getElementById('txtTime');
+		let countTime;
+		let stopedTime = txtTime.value;
+		stopedTime = Number.parseInt(stopedTime);
+		let viewTime = document.getElementById('time');
+
+		btnStart.addEventListener('click', function(){
+			let self = this;
+			// khoa button ko cho bam lai lan nua
+			self.disabled = true;
+			countTime = setInterval(function(){
+				stopedTime += 1;
+				if(stopedTime == 5){
+					// tang phut le - reset lai giay ve 0
+					//stopedTime = 0;
+				}
+				viewTime.innerHTML = stopedTime;
+				txtTime.value = stopedTime;
+			},1000);
+		});
+
+		// BAT SU KIEN Stop
+		let btnStop = document.getElementById('stop');
+		btnStop.addEventListener('click', function(){
+			// xoa setInterval
+			clearInterval(countTime);
+			btnStart.disabled = false;
+		});
+
+	</script>
+</body>
+</html>
